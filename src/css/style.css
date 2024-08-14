@@ -1,0 +1,157 @@
+@font-face {
+    font-family: MorrisR;
+    src: url(/src/fonts/MorrisRomanBlackAlt.otf) format("opentype"), url(/src/fonts/MorrisRomanBlackAlt.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+
+
+/* ESTILO DO CABEÇALHO */
+}
+
+header{
+    padding: 20px 4%;
+}
+
+/* SÓ A CLASSE INTERFACE DENTRO DO HEADER */
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+}
+
+header nav a{
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    transition: .3s;
+    font-family: "Skranji", system-ui;
+
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header nav a:hover {
+    color: #0ef;
+    transform: scale(1.1);
+}
+header nav a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 3px solid #0ef;
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: .2s;
+}
+
+nav a:hover span {
+    transform: scale(1.2) translateY(0);
+    opacity: 1;
+}
+
+/* ESTILO A HOME */
+
+section.home{
+    padding: 20px 4%;
+    height: calc(100vh - 100px); /* - A ALTURA DO CABECALHO */
+}
+
+section.home .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top:100px;
+
+}
+.home .informacoes h1 {
+    color: #fff;
+    font-family: MorrisR;
+    font-size: 60px;
+    line-height: 80px;
+    text-shadow: 0 0 5px cyan,
+        0 0 5px cyan;
+
+
+
+}
+
+.home .informacoes h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: "Skranji", system-ui;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+
+}
+
+.home .redes-sociais {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+
+}
+
+.home .redes-sociais a {
+    border: 2px solid #0ef;
+    border-radius:50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: #0ef;
+}
+
+.home .redes-sociais a:hover {
+    background-color: #0ef;
+    color: #000;
+    border: 2px solid #000;
+    box-shadow: 0 0 15px #0ef;
+
+}
+
+.home .ft-perfil .foto{
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 2.5px cyan,
+                0 0 12.5px cyan,
+                0 0 25px cyan,
+                0 0 50px #000,
+                0 0 30px cyan;
+    position: relative;
+    animation: flutuar 1s  ease-in-out infinite alternate;
+
+}
+
+.home .ft-perfil .foto img{
+    max-width: 100%;
+    
+}
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 5px;
+    }
+}
+
+section.skills{
+    padding: 20px 4%;
+    height: 100vh;
+}
+
+section.projects{
+    padding: 20px 4%;
+    height: 100vh;
+}
