@@ -18,9 +18,10 @@ a{
 
 
 body{
-    background-color:#171C30;
+    background-color: #171c30;
     height: 100vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
 
 }
 
@@ -32,3 +33,16 @@ body{
     margin: 0 auto;
 }
 
+.titulo{
+    text-align: center;
+    padding: 10px;
+}
+.titulo{
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.titulo span{
+    color: #0ef;
+}

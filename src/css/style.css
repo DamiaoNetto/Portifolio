@@ -64,6 +64,8 @@ nav a:hover span {
 section.home{
     padding: 20px 4%;
     height: calc(100vh - 100px); /* - A ALTURA DO CABECALHO */
+    background: linear-gradient(180deg, #171D30, #1D6B87);
+
 }
 
 section.home .flex{
@@ -146,12 +148,128 @@ section.home .flex{
     }
 }
 
-section.skills{
+/* ESTILIZANDO QUEM SOU EU(ABOUT-ME) */
+section.about-me{
     padding: 20px 4%;
     height: 100vh;
+    background-color: #1D6B87;
 }
+
+.about-me .flex{
+    margin-top: 100px;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+
+    }
+}
+.tecnologias{
+    overflow: hidden;
+    padding: 40px 0;
+    white-space: nowrap;
+    position: relative;
+    cursor: pointer;
+    box-shadow: rgba(0, 255, 255, 0.5) 0px 25px 10px -20px;
+}
+.tecnologias::before,
+.tecnologias::after{
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+.tecnologias::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(23,28,48,0), #1D6B87);
+}
+
+.tecnologias::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(23,28,48,0), #1D6B87);
+}
+
+.tecnologias:hover .tec-slide{
+animation-play-state: paused;
+
+}
+.tec-slide{
+    display: inline-block;
+    animation: 30s slide linear infinite  ;
+}
+.tec-slide img{
+    height: 70px;
+    margin: 0 20px;
+
+}
+.tec-slide img:hover{
+    transform: scale(1.5);
+    
+}
+.gif-me{
+    height: 350px;
+}
+.txt-sobre{
+    font-size: 22px;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family:"Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+}
+.span-txt-sobre{
+    color: #000;
+
+    font-family: "Skranji", system-ui;
+    font-size: 50px;
+    text-shadow: 0 0 5px cyan,
+    0 0 5px cyan;
+}
+.span-tec{
+    color: #000;
+    font-family: "Skranji", system-ui;
+
+    text-shadow: 0 0 5px cyan,
+    0 0 5px cyan;
+}
+.about-me h3{
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    font-size: 20px;
+    text-shadow: 0 0 5px cyan,
+    0 0 5px cyan;
+
+}
+
+/*  */
+
+section.especialidades{
+    padding: 20px 4%;
+    height: 100vh;
+    background-color: #1D6B87;
+
+}
+
+ 
 
 section.projects{
     padding: 20px 4%;
     height: 100vh;
+    background: #171D30;
+}
+
+
+section.contacts{
+    padding: 20px 4%;
+    height: 100vh;
+    background: #171D30;
+    background: linear-gradient(0deg, #171D30, #1D6B87);
+
 }
