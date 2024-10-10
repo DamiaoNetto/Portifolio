@@ -782,3 +782,27 @@ footer {
     text-align: center;
   }
 }
+@media screen and (max-width: 400px) {
+  .about-me {
+    margin-top: 0.2px;
+    height: auto;
+  }
+  .home .ft-perfil .foto {
+    max-width: 255px;
+  }
+
+  .txt-sobre {
+    font-size: 11px;
+    margin-top: 5px;
+  }
+  .info-footer {
+    margin-top:260px; /* Ajuste a margem para dar espaço */
+    padding: 10px; /* Remover padding, se necessário */
+  }
+  .about-me h3 {
+    display: none;
+  }
+  .tecnologias{
+    display: none;
+  }
+}
