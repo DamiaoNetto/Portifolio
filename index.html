@@ -46,6 +46,7 @@
     />
 
     <title>Damiao Netto</title>
+    <link rel="shortcut icon" href="src/images/logoDN.svg" type="image/x-icon">
   </head>
   <body>
     <header id="menu">
@@ -75,12 +76,40 @@
             </li>
           </ul>
         </nav>
-
-        <div class="logo">
-          <a href="#"
-            ><img src="src/images/logoDN.svg" alt="Logo do Desenvolvedor"
-          /></a>
+        <div class="btn-abrir-menu" id="btn-menu">
+          <i class="bi bi-list"></i>
         </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+          <div class="btn-fechar">
+            <i class="bi bi-x-octagon"></i>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#menu">INICIO <span></span></a>
+              </li>
+              <li>
+                <a href="#sobre">QUEM SOU<span></span></a>
+              </li>
+              <li>
+                <a href="#oquefaco">O QUE FAÇO<span></span></a>
+              </li>
+              <li>
+                <a href="#projetos">PROJETOS<span></span></a>
+              </li>
+              <li>
+                <a href="#contato">CONTATOS<span></span></a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+          <div class="overlay-menu" id="overlay-menu">
+
+          </div>
+        
+
       </div>
     </header>
 
@@ -89,7 +118,7 @@
         <div class="interface">
           <div class="flex">
             <article class="informacoes">
-              <h1>Olá, Sou Damião Netto.</h1>
+              <h1>Damião Netto.</h1>
               <h2>Desenvolvedor <span class="text"></span></h2>
               <p></p>
               <ul class="redes-sociais">
@@ -209,7 +238,7 @@
 
       <section id="oquefaco" class="especialidades">
         <div class="interface">
-          <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+          <h2 class="titulo">MINHAS <span>EPECIALIDADES</span></h2>
           <div class="flex">
             <div class="especialidades-box">
               <i class="fas fa-desktop"></i>
@@ -237,18 +266,254 @@
       <section id="projetos" class="projects">
         <div class="interface">
           <h2 class="titulo">MEUS <span>PROJETOS</span></h2>
-          <div class="flex"></div>
+            <div class=" container-projetos">
+              <div class="projeto ativo">
+                <a href="" target="_blank">
+                  <img src="src/images/projeto-x-men.png" alt="Projeto X-men">
+                  <h3>Projeto 1</h3>
+                  <div class="informacoes-projeto">
+                    <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                    <P>Ir para o projeto</P>
+                  </div>
+                </a>
+
+              </div>
+
+
+
+              <div class="projeto ativo">
+                <a href="https://damiaonetto.github.io/Jogo_da_Velha/" target="_blank">
+                  <img src="src/images/projeto-jogo_da_velha.png" alt="projeto vazio">
+                    <h3>Projeto 2</h3>
+                  <div class="informacoes-projeto">
+                    <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                    <P>Ir para o projeto</P>
+                  </div>
+                </a>
+
+              </div>
+
+
+
+              <div class="projeto ativo">
+                <a href=" " target="_blank">
+                  <img src="src/images/sem_projeto.png" alt="projeto vazio">
+
+                 <h3>Projeto 3</h3>
+                  <div class="informacoes-projeto">
+                    <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                    <P>Ir para o projeto</P>
+                  </div>
+                </a>
+
+              </div>
+
+
+
+              <div class="projeto ativo">
+                <a href=" " target="_blank">
+                  <img src="src/images/sem_projeto.png" alt="projeto vazio">
+                  <h3>Projeto 4</h3>
+                  <div class="informacoes-projeto">
+                    <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                    <P>Ir para o projeto</P>
+                  </div>
+                </a>
+
+              </div>
+
+
+
+              <div class="projeto">
+                <a href=" " target="_blank">
+                  <img src="src/images/sem_projeto.png" alt="projeto vazio">
+                  <h3>Projeto 5</h3>
+                  <div class="informacoes-projeto">
+                    <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                    <P>Ir para o projeto</P>
+                  </div>
+                </a>
+
+              </div>
+
+
+
+
+              <div class="projeto">
+                <a href=" " target="_blank">
+                  <img src="src/images/sem_projeto.png" alt="projeto vazio">
+                  <h3>Projeto 6</h3>                  
+                  <div class="informacoes-projeto">
+                    <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                    <P>Ir para o projeto</P>
+                  </div>
+                </a>
+
+              </div>
+
+
+
+              <div class="projeto">
+                <a href=" " target="_blank">
+                  <img src="src/images/sem_projeto.png" alt="projeto vazio">
+                  <h3>Projeto 7</h3>
+                  <div class="informacoes-projeto">
+                    <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                    <P>Ir para o projeto</P>
+                  </div>
+                </a>
+
+              </div>
+
+
+
+              <div class="projeto">
+                <a href=" " target="_blank">
+                  <img src="src/images/sem_projeto.png" alt="projeto vazio">
+
+                 <h3>Projeto 8</h3>
+
+                  <div class="informacoes-projeto">
+                    <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                    <P>Ir para o projeto</P>
+                  </div>
+                </a>
+
+              </div>
+
+
+
+
+            </div>
+            <button class="btn-mostrar-projetos">MOSTRAR MAIS</button>
         </div>
       </section>
 
       <section id="contato" class="contacts">
         <div class="interface">
           <h2 class="titulo">FALE <span>COMIGO</span></h2>
-          <div class="flex"></div>
+          
+          <form action="https://formsubmit.co/nettosousa06@gmail.com" method="POST">
+            <div class="form-group">
+              <div class="fm1">
+                <label for="nome">SEU NOME(*):</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite Aqui..." required>
+              </div>
+              <div class="fm1">
+                <label for="email">E-MAIL(*):</label>
+                <input type="email" id="email" name="email" placeholder="email@exemplo.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="fm2">
+                <label for="telefone">TELEFONE:</label>
+                <input type="text" id="telefone" name="telefone" placeholder="( )_________">
+              </div>
+              <div class="fm2">
+                <label for="assunto">ASSUNTO(*):</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Digite aqui..." required>
+              </div>
+            </div>
+            <label for="assunto">MENSAGEM:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui sua mensagem..." required></textarea>
+            <div class="btn-enviar">
+              <input type="submit"  value="ENVIAR CONTATO">
+
+            </div>
+            <input type="hidden" name="_subject" value="Novo Contato!">
+            <input type="text" name="_honey" style="display: none">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/feedback.html">
+            <input type="hidden" name="_captcha" value="false">
+
+          </form>
         </div>
       </section>
     </main>
 
-    <script src="src/js/main.js"></script>
+    <footer>
+      <div class="interface">
+        <div class="info-footer">
+
+          <div class="menu-footer">
+            <ul>
+              <li>
+                <h3>MENU</h3>
+              </li>
+              <li>
+                <a href="#menu">INICIO <span></span></a>
+              </li>
+              <li>
+                <a href="#sobre">QUEM SOU<span></span></a>
+              </li>
+              <li>
+                <a href="#oquefaco">O QUE FAÇO<span></span></a>
+              </li>
+              <li>
+                <a href="#projetos">PROJETOS<span></span></a>
+              </li>
+              <li>
+                <a href="#contato">CONTATOS<span></span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="redes-footer">
+            <ul>
+              <li>
+                <h3>REDES SOCIAIS</h3>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/"
+                  title="Ir para o Linkedin"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://wa.me/5584999259170"
+                  title="Enviar Mensagem No WhatsApp"
+                  target="_blank"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.github.com/"
+                  title="Ir Para o GitHub"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  title="Ir Para o instagram"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="footerBottom">
+          <span> &copy; 2024 Damiao Netto.</span>
+      </div>
+      </div>
+
+
+
+  </footer>
+
+    <script src="src/js/main.js" defer></script>
   </body>
 </html>
+

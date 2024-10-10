@@ -36,12 +36,12 @@ body{
 .titulo{
     text-align: center;
     padding: 10px;
+    margin-top: 20px;
 }
 .titulo{
     text-align: center;
     color: #fff;
     font-size: 35px;
-    margin-bottom: 50px;
 }
 .titulo span{
     color: #0ef;
