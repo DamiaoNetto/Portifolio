@@ -782,7 +782,7 @@ footer {
     text-align: center;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .about-me {
     margin-top: 0.2px;
     height: auto;
