@@ -568,57 +568,7 @@ footer {
   justify-content: center;
   align-items: center;
   font-family: "Skranji", system-ui;
-} /* ESTILIZANDO A PAGINA DE OBRIGADO */
-.obg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: #171c30;
-  flex-direction: column;
-  font-family: "Skranji", system-ui;
-}
-
-.obg h1 {
-  font-size: 45px;
-  color: #fff;
-  margin-bottom: 30px;
-  font-family: "Skranji", system-ui;
-}
-
-.obg p {
-  color: #fff;
-  font-size: 20px;
-  margin-bottom: 50px;
-  font-family: "Skranji", system-ui;
-}
-
-.obg img {
-  width: 100px;
-  height: 100px;
-}
-
-.obg a {
-  margin-top: 50px;
-  padding: 15px 55px;
-  background: #fff;
-  text-decoration: none;
-  color: #171c30;
-  font-size: 18px;
-  background-color: #0ef;
-  color: #000;
-  cursor: pointer;
-  border-radius: 20px;
-}
-
-.obg a:hover {
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
-    0 0 200px cyan;
-  color: #000;
-  border: 2px solid #000;
-  background-color: #0ef;
-}
-
+} 
 @media screen and (max-width: 1020px) {
   .btn-abrir-menu {
     display: block;
